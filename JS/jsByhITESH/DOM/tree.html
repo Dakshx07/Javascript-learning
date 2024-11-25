@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" media="all">
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+
+</body>
+<script>
+    const div=document.createElement('div');
+    console.log(div)
+
+    div.className="main"
+    div.style.backgroundColor="red"
+    div.id=Math.round(Math.random() *10+1)
+    div.setAttribute("title","generated title");
+    div.style.padding="10px"
+   // div.innerText="Daksh aur code"
+  const addtEXT=  div.createTextNode("Daksh aur code")
+    div.appendChild(addtEXT)
+
+    document.body.appendChild(div)
+</script>
+</html>

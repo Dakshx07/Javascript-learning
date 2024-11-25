@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="" />
+    <title></title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+<button id="stop">Stop</button>
+</body>
+<script>
+    const sayDaksh=function (){
+        console.log("Daksh")
+    }
+   const changeText=function (){
+       document.querySelector('h1').innerHTML="JAVASCRIPT"
+   }
+
+   const changeME= setTimeout(changeText , 2000)
+    // clearTimeout(changeME)      // not a good way to clear
+
+    document.querySelector("#stop").addEventListener("click",function (){
+        clearTimeout(changeME)
+        console.log("stopped")
+    })
+</script>
+</html>
