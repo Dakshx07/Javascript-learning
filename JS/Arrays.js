@@ -49,7 +49,7 @@ let prices=[250,645,300,900,50];
 // }
 // console.log(prices)
 
-
+Consider iterating over a copy of the array or using methods that are safer for modification, like `map` if you intend to create a new array with the modified values. For in-place modification as shown, ensure the loop bounds and indices remain valid throughout the process. The current loop is safe as it only modifies existing elements without changing the array's length or element order.
 // foodItems.push("lichi")
 // console.log(foodItems)
 // foodItems.pop("lichi")
